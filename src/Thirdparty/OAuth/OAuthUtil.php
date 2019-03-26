@@ -67,7 +67,7 @@ class OAuthUtil
                 $key       = str_replace(" ", "-", ucwords(strtolower(str_replace("-", " ", $key))));
                 $out[$key] = $value;
             }
-        } else {
+        } else{
             // otherwise we don't have apache and are just going to have to hope
             // that $_SERVER actually contains what we need
             $out = array();
@@ -87,8 +87,7 @@ class OAuthUtil
                     $out[$key] = $value;
                 }
             }
-        }
-        return $out;
+        }        return $out;
     }
 
     // This function takes a input like a=b&a=c&d=e and returns the parsed
